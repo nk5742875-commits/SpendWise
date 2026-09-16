@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SpendWise - Smart Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container inner">
+      <a class="brand" href="index.html"><span class="brand-badge">₹</span>SpendWise</a>
+      <button class="mobile-toggle" aria-label="Open navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="add-expense.html">Add Expense</a>
+        <a href="history.html">History</a><a href="status.html">Status</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions"><a class="btn btn-light" data-login-btn href="login.html">Login</a><button class="btn btn-danger" data-logout-btn>Logout</button></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">✨ Simple personal finance tracking</span>
+          <h1>Spend smarter.<br/>Save better.</h1>
+          <p>SpendWise helps you record daily expenses, understand where your money goes, manage your monthly budget, and build healthier spending habits.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="login.html">Get Started</a>
+            <a class="btn btn-light" href="about.html">How it works</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="fake-card">
+            <div class="muted">Monthly snapshot</div>
+            <div class="amount-lg">₹4,368</div>
+            <div class="mini-grid">
+              <div class="mini-box"><div class="muted">Budget</div><strong>₹15,000</strong></div>
+              <div class="mini-box"><div class="muted">Remaining</div><strong>₹10,632</strong></div>
+              <div class="mini-box"><div class="muted">Top category</div><strong>Food</strong></div>
+              <div class="mini-box"><div class="muted">Entries</div><strong>5</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title"><h2>Everything connected in one project</h2><p>Each page is a separate HTML file, but all pages share the same CSS and JavaScript so your project is easy to understand and present in VS Code.</p></div>
+        <div class="features">
+          <div class="card"><div class="icon-box">➕</div><h3>Add Expense</h3><p>Store amount, category, date, title and notes directly in browser localStorage.</p></div>
+          <div class="card"><div class="icon-box">📊</div><h3>Dashboard</h3><p>See current month spending, budget, remaining money and recent transactions.</p></div>
+          <div class="card"><div class="icon-box">🧾</div><h3>History</h3><p>Search, filter and delete previous expenses with instant updates.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container inner"><span>© 2026 SpendWise</span><span>HTML • CSS • JavaScript</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

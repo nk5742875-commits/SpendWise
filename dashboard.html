@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard - SpendWise</title><link rel="stylesheet" href="style.css"></head>
+<body data-protected="true">
+<header class="navbar"><div class="container inner"><a class="brand" href="index.html"><span class="brand-badge">₹</span>SpendWise</a><button class="mobile-toggle">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="add-expense.html">Add Expense</a><a href="history.html">History</a><a href="status.html">Status</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><div class="nav-actions"><button class="btn btn-danger" data-logout-btn>Logout</button></div></div></header>
+<main class="container">
+  <section class="page-header"><h1>Dashboard</h1><p>Your current month at a glance.</p></section>
+  <section class="dashboard-grid">
+    <div class="stat"><div class="label">Spent this month</div><div class="value" id="dashTotal">₹0</div><div class="trend">Live from your saved expenses</div></div>
+    <div class="stat"><div class="label">Expense entries</div><div class="value" id="dashCount">0</div><div class="trend">Current month</div></div>
+    <div class="stat"><div class="label">Monthly budget</div><div class="value" id="dashBudget">₹0</div><div class="trend">Editable in Status</div></div>
+    <div class="stat"><div class="label">Remaining</div><div class="value" id="dashRemaining">₹0</div><div class="trend">Budget minus spending</div></div>
+  </section>
+  <section class="two-col">
+    <div class="card"><h3>Recent expenses</h3><div class="table-wrap"><table><thead><tr><th>Title</th><th>Category</th><th>Date</th><th>Amount</th></tr></thead><tbody id="recentExpenses"></tbody></table></div></div>
+    <div class="card"><h3>Top categories</h3><div id="categorySummary" class="category-list"></div><div style="margin-top:20px"><a class="btn btn-primary" href="add-expense.html">+ Add expense</a></div></div>
+  </section>
+</main>
+<footer class="footer"><div class="container inner"><span>© 2026 SpendWise</span><span>Smart expense tracking</span></div></footer>
+<script src="script.js"></script></body></html>
